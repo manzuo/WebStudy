@@ -1,0 +1,49 @@
+<html>
+<head>
+    <style>
+    .picture{
+          width: 600px;
+          height: 600px;
+          margin-left: 150px;
+          border:1px solid #000;
+      }
+      #img_span img{
+          width: 100px;
+          height: 100px;
+          margin-right: 20px;
+          margin-top: 20px;
+
+      }
+    </style>
+</head>
+<body>
+     <div class="picture">
+            <span id="img_span">
+                 <input id="file" class="filepath" onchange="changepic(this)" type="file"><br>
+            </span>
+     </div>
+</body>
+<script>
+        var i=0;
+        function changepic(obj) {
+            document.getElementById("img_span").innerHTML+="<img src=\"\" id=\"show"+i+"\" width=\"200\" style=\"opacity: 0;\">";
+            var newsrc=getObjectURL(obj.files[0]);
+            document.getElementById('show'+i).src=newsrc;
+            document.getElementById("show"+i).style.opacity=1;
+            i++;
+        }
+        //建立一个可存取到该file的url
+        function getObjectURL(file) {
+            var url = null ;
+            // 下面函数执行的效果是一样的，只是需要针对不同的浏览器执行不同的 js 函数而已
+            if (window.createObjectURL!=undefined) { // basic
+                url = window.createObjectURL(file) ;
+            } else if (window.URL!=undefined) { // mozilla(firefox)
+                url = window.URL.createObjectURL(file) ;
+            } else if (window.webkitURL!=undefined) { // webkit or chrome
+                url = window.webkitURL.createObjectURL(file) ;
+            }
+            return url ;
+        }
+    </script>
+</html>

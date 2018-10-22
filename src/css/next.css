@@ -1,0 +1,21 @@
+.next{
+    width: 516.5px;
+    margin: auto;
+}
+.next a{
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin-left: 25px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    float: left;
+    font-size:11px;
+    background: white;
+    color: black;
+}
+.next a:hover{
+    background: black;
+    color:white;
+}
