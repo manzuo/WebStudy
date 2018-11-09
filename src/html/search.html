@@ -9,11 +9,11 @@
     <style>
 
       .main{
-          width: 1200px;
+          width: 100%;
           margin-right: auto;
           margin-left: auto;
-          margin-top: 150px;
-          padding: 15px 15px;
+          margin-top: 12.5%;
+          padding: 1.25% 1.25%;
           font-family: "宋体";
           font-size: 16px;
           color: #555;   
@@ -67,7 +67,7 @@
         <center>
             <ul>
                 <li>
-                    <a href="#home" style="background: url(logo.png)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="index.html" style="background: url(logo.png) no-repeat 33%,5%;background-size: 100% 100%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                 </li>
                 <li>
                     <a href="index.html">最新套图</a>
@@ -105,31 +105,64 @@
             <img src="logo.png" alt="logo">
         </div>
         <div class="search">
-            <form action="#">
-                <span id="textbox"><input type="text" placeholder="输入表情包名称或关键字"></span>
-                <span id="submitbox"><input type="submit" value="搜索"></span>               
-            </form>
+            
+                <span id="textbox"><input type="text" id="keyWord" placeholder="输入表情包名称或关键字"></span>
+                <span id="submitbox"><input type="button" value="搜索" onclick="getKeyword()"></span>       
         </div>
         <div class="heading">
             <p>实时热搜</p>
-            <a href="#">傻逼儿子</a> <a href="#">试试就试试</a><a href="#">嘤嘤嘤</a><a href="#">给大佬递刀</a>
-            <a href="#">骗我发图</a><a href="#">我的得意的笑</a><a href="#">阿姨好</a><a href="#">你该不会是个</a>
-            <a href="#">无语</a><a href="#">喷水</a><a href="#">大嫂</a><a href="#">打呵欠</a>
-            <a href="#">点点点</a><a href="#">开始表演</a><a href="#">呵呵</a><a href="#">mua</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=傻逼儿子">傻逼儿子</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=试试就试试">试试就试试</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=嘤嘤嘤">嘤嘤嘤</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=给大佬递刀">给大佬递刀</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=骗我发图">骗我发图</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=我的得意的笑">我的得意的笑</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=阿姨好">阿姨好</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=你该不会是个">你该不会是个</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=无语">无语</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=喷水">喷水</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=大嫂">大嫂</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=打呵欠">打呵欠</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=点点点">点点点</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=开始表演">开始表演</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=呵呵">呵呵</a>
+            <a target="_blank"href="http://www.doutula.com/search?keyword=mua">mua</a>
         </div>
         <br>
         <br>
         <br>
         <div class="heading">
             <p>今日热门</p>
-            <a href="#">真香警告</a> <a href="#">小姐姐</a><a href="#">早上好</a><a href="#">借奶消愁</a>
-            <a href="#">死鬼</a><a href="#">吃</a><a href="#">mua</a><a href="#">哈哈哈哈</a>
-            <a href="#">无语</a><a href="#">不想努力了</a><a href="#">富婆</a><a href="#">肥宅</a>
-            <a href="#">呵垃圾</a><a href="#">臭大佬好过分</a><a href="#">舔狗</a><a href="#">叉腰</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=真香警告">真香警告</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=小姐姐">小姐姐</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=早上好">早上好</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=借奶消愁">借奶消愁</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=死鬼">死鬼</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=吃">吃</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=mua">mua</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=哈哈哈哈">哈哈哈哈</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=无语">无语</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=不想努力了">不想努力了</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=富婆">富婆</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=肥宅">肥宅</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=呵垃圾">呵垃圾</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=臭大佬好过分">臭大佬好过分</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=舔狗">舔狗</a>
+            <a target="_blank"href=" http://www.doutula.com/search?keyword=叉腰">叉腰</a>
         </div>
 
     </div>
 
 </body>
-
+<script>
+    function getKeyword(){
+        var keyWord = document.getElementById("keyWord").value;
+        if(keyWord.trim()==''){
+            alert("请输入表情包名称或关键字");
+        }
+        else{
+            window.location.href="http://www.doutula.com/search?keyword="+keyWord;
+        }
+    }
+</script>
 </html>

@@ -7,31 +7,48 @@
     <style>
         .main {
             height: 260px;
-            width: 1020px;
+            width: 67.5%;
             margin-top: 60px;
-            margin-left: 250px;
+            margin-left: 15.25%;
+            margin-right: 15.25%;
+            overflow: hidden;
             background: white;
         }
 
         .photo {
+            overflow: hidden;
             height: 180px;
-            width: 1020px;
+            width: 100%;
         }
-
-        .photo img {
-            height: 160px;
-            width: 160px;
+        /* .photo img {
+            position: relative;
+            overflow: hidden;
+            height:88.88%;
+            width: 15.68%;
             margin: 2px;
+            
+        } */
+        .photodiv {
+            height:0;
+            width: 15.68%;
+            margin: 2px;
+            padding: 15.68% 0 0;
+            white-space: nowrap;
+            display: inline-block;
+        }
+        .photodiv img{
+            height: auto;
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
     <div class="top">
-        <center>
+        
             <ul>
                 <li>
-                    <a href="index.html" style="background: url(logo.png)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="index.html" style="background: url(logo.png) no-repeat 33%,5%;background-size: 100% 100%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                 </li>
                 <li>
                     <a href="index.html">最新套图</a>
@@ -62,7 +79,6 @@
                     </ul>
                 </li>
             </ul>
-        </center>
     </div>
     <br>
     <br>
@@ -75,12 +91,13 @@
         <br>
         <hr>
         <div class="photo">
-            <img src="picture/set/cooker/1.jpg">
-            <img src="picture/set/cooker/2.jpg">
-            <img src="picture/set/cooker/3.jpg">
-            <img src="picture/set/cooker/4.jpg">
-            <img src="picture/set/cooker/5.jpg">
-            <img src="picture/set/cooker/6.jpg">
+            <div class="photodiv"><img src="picture/set/cooker/1.jpg"></div>
+            <div class="photodiv"><img src="picture/set/cooker/2.jpg"></div>
+            <div class="photodiv"><img src="picture/set/cooker/3.jpg"></div>
+            <div class="photodiv"><img src="picture/set/cooker/4.jpg"></div>
+            <div class="photodiv"><img src="picture/set/cooker/5.jpg"></div>
+            <div class="photodiv"><img src="picture/set/cooker/6.jpg"></div>
+    
         </div>
         <hr>
     </div>
