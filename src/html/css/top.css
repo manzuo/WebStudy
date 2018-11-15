@@ -6,6 +6,7 @@
     background:rgb(189, 181, 181);
     position: fixed; /*固定在顶部*/
     top: 0;/*离顶部的距离为0*/
+    z-index: 2;
 }
 .top ul{
     /* 清除ul标签的默认样式 */
