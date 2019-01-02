@@ -1,5 +1,3 @@
-@charset="utf-8";
-
 
 ul {
     list-style:none;
@@ -23,7 +21,7 @@ ul {
     text-align: center;
     display: inline-block;
 }
-/*²à±ßµ¼º½À¸*/
+/*ï¿½ï¿½ßµï¿½ï¿½ï¿½ï¿½ï¿½*/
 #sideNavBar{
     text-align: center;
     width:90px;
@@ -56,17 +54,4 @@ ul {
 #content a:hover{
 	color:blue;
     font-weight: bold;
-}
-#imgShow1{
-}
-#imgShow1 img{
-    width: 20px;
-    height: 20px;
-    margin: 7px;
-    border-radius: 10px;
-}
-#imgShow2{
-}
-#imgShow2 img{
-	width: 
 }
